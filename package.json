@@ -12,7 +12,7 @@
     "lint:code:fix": "prettier --write .",
     "lint": "npm run lint:js && npm run lint:code",
     "lint:fix": "npm run lint:js:fix && npm run lint:code:fix",
-    "start": "electron .lint"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
