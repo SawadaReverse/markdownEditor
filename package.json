@@ -1,0 +1,40 @@
+{
+  "name": "markdowneditor",
+  "version": "0.0.1",
+  "description": "with electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeCheck": "tsc --noEmit",
+    "lint:js": "eslint --ext .js,.ts .",
+    "lint:js:fix": "eslint --fix --ext .js,.ts .",
+    "lint:code": "prettier .",
+    "lint:code:fix": "prettier --write .",
+    "lint": "npm run lint:js && npm run lint:code",
+    "lint:fix": "npm run lint:js:fix && npm run lint:code:fix",
+    "start": "electron .lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SawadaReverse/markdownEditor.git"
+  },
+  "author": "sawada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SawadaReverse/markdownEditor/issues"
+  },
+  "homepage": "https://github.com/SawadaReverse/markdownEditor#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.5",
+    "@types/node": "^18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "electron": "^19.0.8"
+  }
+}
